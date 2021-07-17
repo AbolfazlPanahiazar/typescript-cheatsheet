@@ -47,8 +47,8 @@ class FlyingRobot extends Robot {
   //   private jetPackSize: number;
   private readonly jetPackSize: number;
 
-  constructor(name: string, jetPackSize: number) {
-    super(name);
+  constructor(name: string, jetPackSize: number, color: string) {
+    super(name, "yellow");
     this.jetPackSize = jetPackSize;
   }
 
@@ -58,4 +58,4 @@ class FlyingRobot extends Robot {
   }
 }
 
-const robot = new Robot("Ticky");
+const robot = new FlyingRobot("Ticky", 5, "yellow");
